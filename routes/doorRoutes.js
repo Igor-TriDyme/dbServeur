@@ -6,8 +6,7 @@ module.exports = (app) => {
     router.post("/batch",DoorsController.batchSave);
     router.patch("/update",DoorsController.updateOne);
     router.delete("/delete",DoorsController.delete);
-    router.get("/bolts",DoorsController.Opensees);
- 
+  
     
     app.use("/api/doors", router);
 

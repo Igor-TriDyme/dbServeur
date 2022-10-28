@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-var UniqueID = String;
-
 let DoorModel = new Schema({
-    _id : UniqueID,
+    revit_id :String,
     FamilyType : String,
     Mark : String,
     DoorFinish : String
@@ -12,7 +10,7 @@ let DoorModel = new Schema({
     collection : "Doors",
     versionKey : false
 },{
-    _id : false
+  
 });
 
 module.exports = mongoose.model("Doors", DoorModel); 
